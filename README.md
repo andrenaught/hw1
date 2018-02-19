@@ -1,4 +1,4 @@
-# ROS_src
+# hw1 - CPSC481
 
 Tested and ran on Ubuntu 16.04 in a terminal
 
