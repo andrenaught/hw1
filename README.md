@@ -14,31 +14,9 @@ catkin_make
 source devel/setup.bash
 ```
 
-2. In catkin/src folder enter this command:
+2. Move the hw1 package folder to catkin_ws/src:
 
-```
-catkin_create_pkg hw1 std_msgs roscpp
-```
-
-3. In catkin/src/hw1/src folder, add the sender.cpp and receiver.cpp files
-
-4. In catkin/src/hw1 folder, open 'CMakeLists.txt' and add this to the bottom:
-
-```
-#hello.cpp
-add_executable(hello src/hello.cpp)
-target_link_libraries(hello ${catkin_LIBRARIES})
-
-#sender.cpp
-add_executable(sender src/sender.cpp)
-target_link_libraries(sender ${catkin_LIBRARIES})
-
-#receiver.cpp
-add_executable(receiver src/receiver.cpp)
-target_link_libraries(receiver ${catkin_LIBRARIES})
-```
-
-5. In catkin folder enter this command to update the changes:
+3. In catkin folder enter this command to update the changes:
 
 ```
 catkin_make
@@ -47,6 +25,11 @@ catkin_make
 # Running the nodes
 
 Open 4 terminals
+
+In each terminal cd to the 'catkin' folder and run this command:
+```
+source devel/setup.bash
+```
 
 In terminal 1: Run the master node
 ```
